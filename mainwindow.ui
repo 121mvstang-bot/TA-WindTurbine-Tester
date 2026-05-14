@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1181</width>
+    <height>710</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="comboBoxPorts">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>241</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>1161</width>
+      <height>621</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Tab 1</string>
+     </attribute>
+     <widget class="QTextEdit" name="terminalView">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1141</width>
+        <height>571</height>
+       </rect>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Tab 2</string>
+     </attribute>
+     <widget class="QWidget" name="plotWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>791</width>
+        <height>561</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelCurrentVoltage">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>20</y>
+        <width>321</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>V: ---</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMaxVoltage">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>160</y>
+        <width>321</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max V: ---</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelCurrentAccelMag">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>330</y>
+        <width>321</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>|a|: ---</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="labelMaxAccelMag">
+      <property name="geometry">
+       <rect>
+        <x>820</x>
+        <y>460</y>
+        <width>321</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Max |a|: ---</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonStartMeasure">
+      <property name="geometry">
+       <rect>
+        <x>960</x>
+        <y>270</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Start Measure</string>
+      </property>
+     </widget>
+     <widget class="QSpinBox" name="spinMeasureSeconds">
+      <property name="geometry">
+       <rect>
+        <x>900</x>
+        <y>270</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="minimum">
+       <number>1</number>
+      </property>
+      <property name="value">
+       <number>10</number>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="buttonStopMeasure">
+      <property name="geometry">
+       <rect>
+        <x>1090</x>
+        <y>270</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Stop</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Calibrate">
+      <property name="geometry">
+       <rect>
+        <x>810</x>
+        <y>270</y>
+        <width>71</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Zero</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QComboBox" name="comboBoxBaud">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>10</y>
+      <width>121</width>
+      <height>24</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="buttonConnect">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>86</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Connect</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1181</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
